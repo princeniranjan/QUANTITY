@@ -1,0 +1,30 @@
+import java.util.*;
+public class Ticket{
+    public static void main(String arg[]){
+        int price=0;
+        int t_amt=0;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("ENTER THE TOTAL QUANTITY");
+        int num = scan.nextInt();
+       // System.out.print(num);
+       for(int i =1;i<=num;i++){
+           System.out.println("ENTER YOUR AGE");
+           int age = scan.nextInt();
+          // System.out.println(age);
+          if(age>60){
+              price += 30;
+            //  t_amt=i*price;
+          }
+          else if(age<12){
+              price+=20;
+            //  t_amt=i*price;
+          }
+          else{
+              price += 50;
+            //  t_amt=i*price;
+          }
+          
+       }
+       System.out.print(price);
+    }
+}
